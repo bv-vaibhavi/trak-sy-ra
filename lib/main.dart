@@ -85,15 +85,15 @@ class _TaskPageState extends State<TaskPage> {
       barrierLabel: "close",
       barrierColor: Colors.transparent,
       transitionDuration: const Duration(milliseconds: 380),
-      pageBuilder: (_, __, ___) => const SizedBox.shrink(),
-      transitionBuilder: (ctx, anim1, _, __) {
+      pageBuilder: (_, _, _) => const SizedBox.shrink(),
+      transitionBuilder: (ctx, anim1, _, _) {
         final curved = CurvedAnimation(parent: anim1, curve: Curves.easeOutBack);
         return Stack(
           children: [
             // ── Blurred dark backdrop ──
             AnimatedBuilder(
               animation: anim1,
-              builder: (_, __) => BackdropFilter(
+              builder: (_, _) => BackdropFilter(
                 filter: ImageFilter.blur(
                   sigmaX: 14 * anim1.value,
                   sigmaY: 14 * anim1.value,
