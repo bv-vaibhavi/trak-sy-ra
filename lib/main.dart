@@ -249,7 +249,7 @@ class _TaskPageState extends State<TaskPage> {
                           Row(children: [
                             const Icon(Icons.bolt, color: kAmber, size: 28),
                             const SizedBox(width: 6),
-                            const Text("TaskFlow",
+                            const Text("Traksyra",
                                 style: TextStyle(color: kAmber, fontWeight: FontWeight.bold, fontSize: 24)),
                           ]),
                           // Counter badge
